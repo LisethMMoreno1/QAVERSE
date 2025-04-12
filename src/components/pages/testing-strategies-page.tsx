@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 import { CodeBlock } from "../ui/code-block";
 
 const TestingStrategiesPage = () => {
@@ -67,12 +68,23 @@ describe('Formulario de login', () => {
           </ul>
         </div>
       </div>
-
-      <div className="bg-gray-50 rounded-lg p-6">
-        <CodeBlock code={cypressCode} language="js" fileName="login.cy.js" />
-      </div>
     </div>
   );
 };
+
+/* function TestingTypeCard({ title, description, link }) {
+  return (
+    <div className="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow">
+      <h3 className="font-medium text-amber-600 mb-2">{title}</h3>
+      <p className="text-gray-600 text-sm mb-3">{description}</p>
+      <Link
+        href={link}
+        className="text-amber-500 hover:text-amber-600 text-sm font-medium"
+      >
+        Leer más →
+      </Link>
+    </div>
+  );
+} */
 
 export default TestingStrategiesPage;

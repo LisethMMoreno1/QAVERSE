@@ -23,8 +23,20 @@ export function LeftSidebar({ setCurrentPage }: Props) {
           <SidebarItem
             icon={<FileText size={18} />}
             title="Fundamentos de QA"
-            onClick={() => setCurrentPage?.("home")}
+            onClick={() => setCurrentPage?.("foundationsOfQAPage")}
             active
+          />
+
+          <SidebarItem
+            icon={<FileText size={18} />}
+            title="Tipos de Pruebas"
+            onClick={() => setCurrentPage?.("typesOfSoftwareTestingPage")}
+          />
+
+          <SidebarItem
+            icon={<FileText size={18} />}
+            title="Pruebas Funcionales"
+            onClick={() => setCurrentPage?.("functionalTestingPage")}
           />
         </SidebarSection>
 
