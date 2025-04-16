@@ -1,4 +1,4 @@
-import { TestCases } from "../../ui/test-cases";
+import { TestCases } from "./test-cases-page";
 
 const FunctionalTestingPage = () => {
   return (

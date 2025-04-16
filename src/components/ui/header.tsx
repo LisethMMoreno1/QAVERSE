@@ -1,7 +1,6 @@
 import { Link } from "lucide-react";
 import { QaverseLogo } from "./qaverse-logo";
 import { SearchBar } from "./search-bar";
-import { Button } from "./button";
 
 export function Header() {
   return (
@@ -15,12 +14,6 @@ export function Header() {
           <Link href="/contacto" className="text-gray-600 hover:text-gray-900">
             Contacto
           </Link>
-          <Button
-            variant="default"
-            className="bg-yellow-500 hover:bg-yellow-600 text-white"
-          >
-            Dashboard
-          </Button>
         </nav>
       </div>
     </header>

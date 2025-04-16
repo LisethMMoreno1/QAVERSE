@@ -1,0 +1,79 @@
+[
+  {
+    "id": "TC-1001",
+    "title": "Aplicación de Banca en Línea",
+    "scenario": "Un usuario desea transferir fondos entre sus cuentas.",
+    "application": "Banca en Línea",
+    "priority": "alta",
+    "status": "aprobado",
+    "createdBy": "Ana Martínez",
+    "createdAt": "2023-10-15",
+    "lastRun": "2023-11-20",
+    "environment": "Producción",
+    "notes": "Este caso de prueba es crítico.",
+    "steps": [
+      {
+        "title": "Validación",
+        "description": "El usuario debe iniciar sesión correctamente."
+      },
+      {
+        "title": "Transferencia",
+        "description": "Selecciona cuenta y monto a transferir."
+      },
+      {
+        "title": "Confirmación",
+        "description": "Debe ver mensaje de éxito."
+      }
+    ]
+  },
+  {
+    "id": "TC-1002",
+    "title": "Inicio de sesión con credenciales inválidas",
+    "scenario": "Un usuario intenta iniciar sesión con una contraseña incorrecta.",
+    "application": "Portal de Empleados",
+    "priority": "media",
+    "status": "fallido",
+    "createdBy": "Luis Torres",
+    "createdAt": "2024-01-10",
+    "lastRun": "2024-02-05",
+    "environment": "Testing",
+    "notes": "Se esperaba mensaje de error, pero no apareció.",
+    "steps": [
+      {
+        "title": "Ingreso de datos",
+        "description": "El usuario introduce correo válido y contraseña errónea."
+      },
+      {
+        "title": "Resultado esperado",
+        "description": "Debe mostrarse mensaje de error de autenticación."
+      }
+    ]
+  },
+  {
+    "id": "TC-1003",
+    "title": "Actualización de perfil de usuario",
+    "scenario": "El usuario desea cambiar su número de teléfono desde la sección de perfil.",
+    "application": "App Móvil",
+    "priority": "baja",
+    "status": "pendiente",
+    "createdBy": "Carolina Pérez",
+    "createdAt": "2024-12-01",
+    "lastRun": "2025-01-12",
+    "environment": "Pre-producción",
+    "notes": "Aún no se ha implementado validación del número.",
+    "steps": [
+      {
+        "title": "Editar perfil",
+        "description": "El usuario accede a la sección de perfil."
+      },
+      {
+        "title": "Cambio de teléfono",
+        "description": "Introduce nuevo número y guarda cambios."
+      },
+      {
+        "title": "Confirmación",
+        "description": "Se muestra mensaje de éxito."
+      }
+    ]
+  }
+]

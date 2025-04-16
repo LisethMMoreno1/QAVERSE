@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import { getRouteKeyByPath, routes, RouteKey } from "./routes/router";
+import { Suspense, useEffect, useState } from "react";
 import { MainLayout } from "./components/layouts/main-layout";
+import { getRouteKeyByPath, routes, type RouteKey } from "./routes/router";
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState<RouteKey>(() =>
@@ -13,6 +14,7 @@ function App() {
     const handleNavigation = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest("a");
+
       if (anchor && anchor.getAttribute("href")?.startsWith("/")) {
         e.preventDefault();
         const href = anchor.getAttribute("href")!;
@@ -36,10 +38,13 @@ function App() {
   }, []);
 
   const PageComponent = routes[currentPage].component;
+  const isHomePage = currentPage === "home";
+
 
   return (
     <MainLayout setCurrentPage={setCurrentPage} currentPage={currentPage}>
       <Suspense fallback={<div>Cargando...</div>}>
+        {isHomePage}
         <PageComponent />
       </Suspense>
     </MainLayout>

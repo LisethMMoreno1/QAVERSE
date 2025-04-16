@@ -1,4 +1,3 @@
-import { Link } from "lucide-react";
 import { CodeBlock } from "../ui/code-block";
 
 const TestingStrategiesPage = () => {
@@ -12,19 +11,6 @@ import { sum } from './math';
 
 test('suma 1 + 2 para obtener 3', () => {
   expect(sum(1, 2)).toBe(3);
-});`;
-
-  const cypressCode = `// Test de integración con Cypress
-describe('Formulario de login', () => {
-  it('debería mostrar mensaje de error con credenciales inválidas', () => {
-    cy.visit('/login');
-    
-    cy.get('input[name="email"]').type('usuario@ejemplo.com');
-    cy.get('input[name="password"]').type('contraseñaIncorrecta');
-    cy.get('button[type="submit"]').click();
-    
-    cy.contains('Credenciales inválidas').should('be.visible');
-  });
 });`;
 
   return (
@@ -71,20 +57,5 @@ describe('Formulario de login', () => {
     </div>
   );
 };
-
-/* function TestingTypeCard({ title, description, link }) {
-  return (
-    <div className="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow">
-      <h3 className="font-medium text-amber-600 mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm mb-3">{description}</p>
-      <Link
-        href={link}
-        className="text-amber-500 hover:text-amber-600 text-sm font-medium"
-      >
-        Leer más →
-      </Link>
-    </div>
-  );
-} */
 
 export default TestingStrategiesPage;

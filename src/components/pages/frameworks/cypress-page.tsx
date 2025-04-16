@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CodeBlock } from "../../ui/code-block";
 import { LanguageSwitcher } from "../../ui/language-switcher";
 

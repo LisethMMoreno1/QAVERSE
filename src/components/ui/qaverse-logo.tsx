@@ -1,10 +1,13 @@
-import { FileText, Link } from "lucide-react"
+import { FileText } from "lucide-react";
 
 export function QaverseLogo() {
   return (
-    <Link href="/" className="flex items-center gap-2 text-yellow-500 font-bold text-xl">
+    <a
+      href="/"
+      className="flex items-center gap-2 text-yellow-500 font-bold text-xl"
+    >
       <FileText className="h-6 w-6" />
-      <span>QAVERSE</span>
-    </Link>
-  )
+      <span className="hidden sm:inline">QAVERSE</span>
+    </a>
+  );
 }

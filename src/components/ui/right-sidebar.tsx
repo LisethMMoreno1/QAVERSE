@@ -9,7 +9,7 @@ export function RightSidebar({ currentPage }: RightSidebarProps) {
     switch (currentPage) {
       case "cypress":
         return (
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2 text-sm   h-full ">
             <li>
               <a href="#what-is-cypress" className="hover:underline">
                 ¿Qué es Cypress?
